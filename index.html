@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>音羽山 清水寺</title>
+    <style>
+        * {
+            font-family: 'Shippori Mincho', serif;
+        }
+
+        .eng-font {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .nav_logo_mobile {
+            width: 138px;
+        }
+
+        .nav_logo_pc {
+            height: 0;
+        }
+
+        .navbar-nav {
+            width: 100%;
+        }
+
+        .nav-letter {
+            height: 54px;
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: .4rem;
+            line-height: 35px;
+            margin: 0 auto
+        }
+
+        .deco-line {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .main-pic-box{
+            background-image: url(./images/17929578910524078.jpeg);
+            background-size: cover;
+        }
+
+        .main-pic{
+            object-fit: cover;
+        }
+
+        .sakura-date::after{
+            content: '';
+            display: block;
+            width: 1px;
+            height: 36px;
+            background: rgba(203,203,203,.6);
+            margin: 32px auto;
+        }
+
+        .content-letter {
+            font-size: .7rem;
+            font-weight: 300;
+            letter-spacing: .1rem;
+            overflow: hidden;
+        }
+
+        .vertical-text {
+            writing-mode: horizontal-tb;
+            width: fit-content;
+        }
+
+        .h3-text {
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .4rem;
+        }
+
+        .h3-text-regular {
+            font-size: .7rem;
+            font-weight: 300;
+            letter-spacing: .1rem;
+        }
+
+        .h2-text {
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: .4rem;
+        }
+
+        .h2-text-regular{
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: .4rem;
+        }
+
+        .h2-text-md{
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: .4rem;
+        }
+
+        .content-date{
+            font-size: .7rem;
+            font-weight: 300;
+            letter-spacing: .1rem;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .arrow-picture{
+            width: 17px;
+            height: 4.5px;
+        }
+
+        .update-pitures1{
+            object-fit: cover;
+        }
+
+        .vertical-text-position1{
+            position: absolute;
+            top: -50px;
+            left: calc(50% - 64px);
+        }
+
+        .vertical-text-position2 {
+                position: absolute;
+                top: -95px;
+                left: calc(50% - 36px);
+        }
+
+        .link-arr3{
+            width: 7px;
+            opacity: .7;
+        }
+
+        .border-bold{
+            border: 2px solid;
+        }
+
+        .border-length{
+            width: 45px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .border-length2{
+            width: 68px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .border-length3{
+            width: 145px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+        
+        .bg-grey{
+            background-color: rgba(165, 165, 165, 0.1);
+        }
+
+        .bg-dark-grey{
+            background-color: rgba(165, 165, 165, 0.336);
+        }
+
+        .bg-dark{
+            background-color: rgb(31, 31, 31);
+        }
+
+        .section-pd{
+            padding-top: 100px;
+            padding-bottom: 30px;
+        }
+
+        .more-bottom::after{
+             content: '';
+            display: block;
+            width: 70px;
+            height: 1px;
+            background: #dc3545;
+            margin: 5px auto;
+        }
+
+        .more-bottom2::after{
+            content: '';
+            display: block;
+            width: 92px;
+            height: 1px;
+            background: #dc3545;
+            margin-top: 5px;
+        }
+
+        .bottom-banner-pic1{
+            background-image: url(./images/sp_banner_2017event.jpeg);
+            background-size: cover;
+            padding: 0;
+        }
+
+        .banner-text1{
+            top: calc(50% - .5rem);
+            left: calc(50% - 94px)
+        }
+
+        .banner-text2{
+            top: calc(50% - .3rem);
+            left: calc(50% - 120px);
+        }
+
+        .banner-text3{
+            top: calc(50% - .7rem);
+            left: calc(50% - 67px)
+        }
+        
+        .insta-pic1{
+            background-image: url(./images/18170439940117747.jpeg);
+            background-size: cover;
+        }
+
+        .insta-pic2{
+            background-image: url(./images/18138611326166163.jpeg);
+            background-size: cover;
+        }
+
+        .insta-pic3{
+            background-image: url(./images/17929578910524078.jpeg);
+            background-size: cover;
+        }
+
+        .insta-pic4{
+            background-image: url(./images/18210967015057882.jpg);
+            background-size: cover;
+        }
+
+        .insta-pic5{
+            background-image: url(./images/18109275964211504.jpg);
+            background-size: cover;
+        }
+
+        .insta-pic6{
+            background-image: url(./images/17929198198520820.jpg);
+            background-size: cover;
+        }
+
+        .insta-pic7{
+            background-image: url(./images/17886739424033952.jpg);
+            background-size: cover;
+        }
+
+        .insta-pic8{
+            background-image: url(./images/18183400906074202.jpg);
+            background-size: cover;
+        }
+
+        .window-icon{
+            width: 19px;
+            margin-right: 5px;
+        }
+
+        .round-icon-size{
+            width: 38px;
+            margin: 0 18px;
+        }
+
+        .youtube-icon-size{
+            width: 64px;
+            margin: 0 18px;
+        }
+
+        .h2-piture-md{
+            width: 240px;
+        }
+
+        @media screen and (max-width:768px) {
+            .vertical-content-position2{
+                margin-top: 70px;
+            }
+
+            .insta-more-text{
+                text-align: center;
+            }
+
+            .more-bottom2::after{
+                content: '';
+                display: block;
+                width: 92px;
+                height: 1px;
+                background: #dc3545;
+                margin: 5px auto;
+            }
+        }
+        
+        @media screen and (min-width:767px) {
+            .main-pic-box{
+                height: 682px;
+            }
+            .vertical-text-fix{
+                height: 147px;
+            }
+
+            .vertical-text-fix2{
+                height: 92px;
+            }
+
+            .vertical-text{
+                writing-mode: vertical-lr;
+                background-color: #fff;
+            }
+
+            .vertical-text-position1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .vertical-content-position1{
+                position: absolute;
+                top: 20px;
+                left: 13px;
+            }
+
+            .vertical-text-position2 {
+                position: absolute;
+                top: 150px;
+                left: 0;
+            }
+
+            .vertical-content-position2{
+                position: absolute;
+                top: 230px;
+                left: 13px;
+            }
+        }
+
+        @media screen and (min-width:991px) {
+            .nav_logo_mobile {
+                width: 0;
+            }
+
+            .nav_logo_pc {
+                height: 135px;
+            }
+
+            .deco-line {
+                width: 0;
+            }
+
+            .nav-item {
+                border: 0 !important;
+                margin: 0 auto;
+            }
+
+            .navbar-nav {
+                margin-top: 0;
+            }
+
+            .navbar-nav {
+                margin-top: 45px;
+            }
+
+            .first-content {
+                margin-top: 40px;
+            }
+
+            .main-pic-box{
+                height: 666px;
+            }
+        }
+
+         @media screen and (min-width:1199px) {
+             .main-pic-box{
+                height: 692px;
+            }
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 pt-4">
+        <div class="container">
+            <a class="navbar-brand mb-5" href="#"><img class="nav_logo_mobile" src="./images/sp_logo.svg" alt=""></a>
+            <button class="navbar-toggler mb-5" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav border-bottom">
+                    <li class="nav-item active border-top">
+                        <a class="nav-link nav-letter text-center" href="#">祈り <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item border-top">
+                        <a class="nav-link nav-letter text-center text-body" href="#">四季</a>
+                    </li>
+                    <li class="nav-item border-top">
+                        <a class="nav-link nav-letter text-center text-body" href="#" tabindex="-1"
+                            aria-disabled="true">行事</a>
+                    </li>
+                    <li class="nav-item border-top">
+                        <a class="nav-link nav-letter text-center text-body" href="#" tabindex="-1"
+                            aria-disabled="true">巡る</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand mb-5 mx-5 nav_logo_pc d-none d-lg-block" href="#"><img class="nav_logo_pc"
+                        src="./images/pc_logo.svg" alt=""></a>
+                <ul class="navbar-nav border-bottom">
+                    <li class="nav-item">
+                        <a class="nav-link nav-letter text-center text-body" href="#">歴史 <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item border-top">
+                        <a class="nav-link nav-letter text-center text-body" href="#">交通</a>
+                    </li>
+                    <li class="nav-item border-top">
+                        <a class="nav-link nav-letter text-center text-body" href="#" tabindex="-1"
+                            aria-disabled="true">読む</a>
+                    </li>
+                    <li class="nav-item border-top">
+                        <a class="nav-link nav-letter text-center text-body" href="#" tabindex="-1"
+                            aria-disabled="true">お知らせ</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="deco-line border-top"></div>
+
+    <main>
+        <section class="mb-5">
+            <div class="container">
+                <div class="row first-content mt-5">
+                    <p class="content-letter border-top d-none d-md-block p-0 pt-3 ml-0 vertical-text">二〇二一年四月二日</p>
+                    <div class="col-12 col-md-7 main-pic-box">
+                        <img class="main-pic w-100" src="./images/instagram.gif">
+                    </div>
+                    <p class="content-letter sakura-date w-100 text-center mt-2 d-md-none">2021.3.28</p>
+                    <div class="col-12 col-md-4">
+                        <div class="position-relative">
+                            <div class="vertical-content-position1 border-left border-bottom mt-3">
+                                <div class="d-flex justify-content-between align-items-center ml-md-3 ">
+   
+                                    <p class="content-letter m-3">ペットを連れての入山はご遠慮願います</p>
+                                    <img  class="arrow-picture" src="./images/i_arr.png" alt="">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-top mb-md-3 ml-md-3">
+                                    <p class="content-letter m-3">車椅子をご利用の方へ</p>
+                                    <img class="arrow-picture" src="./images/i_arr.png" alt="">
+                                </div>
+                            </div>
+                            <h3 class="vertical-text vertical-text-fix vertical-text-position1 text-center h3-text border px-1 py-2 mx-auto">重要なお知らせ
+                            </h3>
+                        </div>
+                        <div class="position-relative">
+                            <div class="vertical-content-position2 border-left border-bottom d-flex flex-wrap pl-3">
+                                <div class="col-6 d-flex flex-wrap my-3">
+                                    <div class="col-12 p-0">
+                                        <img class="update-pitures w-100" src="./images/cherryblossomS.jpg">
+                                    </div>
+                                    <h6 class="content-date">2021.3/26</h6>
+                                    <h3 class="content-letter">FEEL KIYOMIZUDERAサイト更新 「花を弄する」</h3>
+                                </div>
+                                <div class="col-6 d-flex flex-wrap my-3">
+                                    <div class="col-12 p-0">
+                                        <img class="update-pitures w-100" src="./images/kiyomizu221S.jpg">
+                                    </div>
+                                    <h6 class="content-date">2021.2/28</h6>
+                                    <h3 class="content-letter">季刊誌『清水』第221号が発行になりました</h3>
+                                </div>
+                                <div class="col-6 d-flex flex-wrap my-3">
+                                    <div class="col-12 p-0">
+                                        <img class="update-pitures w-100" src="./images/seiryu_S.jpg">
+                                    </div>
+                                    <h6 class="content-date update-pictures">2021.2/22</h6>
+                                    <h3 class="content-letter">3/14・3/15・4/3行道「青龍会（せいりゅうえ）‐観音加持‐」</h3>
+                                </div>
+                                <div class="col-6 d-flex flex-wrap my-3">
+                                    <div class="col-12 p-0">
+                                        <img class="update-pitures w-100" src="./images/2021-spring-poster-S.jpg">
+                                    </div>
+                                    <h6 class="content-date">2021.2/22更新</h6>
+                                    <h3 class="content-letter">3/27-4/4実施 春の夜間特別拝観</h3>
+                                </div>
+                                <div class="mx-auto mb-3 mt-2">
+                                    <h3 class="border-bottom border-danger content-letter link-text pb-1">一覧を見る<img class="link-arr3 ml-2 mb-1" src="./images/i_arr3.png" alt=""></h3>   
+                                </div>
+                            </div>
+                            <h3 class="vertical-text vertical-text-fix2 vertical-text-position2 text-center h3-text border px-1 py-2 mx-auto mt-5">
+                                更新情報</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-grey section-pd">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center">
+                    <div class="col-12 mb-5">
+                        <h2 class="border-top-0 border-left-0 border-right-0 border-danger text-center h2-text pb-1 border-bold border-length">特集</h2>
+                    </div>
+                    <div class="col-12 col-md-3 mb-5">
+                        <div class="mb-3"><img class="w-100" src="./images/ohitogara04.jpg" alt=""></div>
+                        <h3 class="text-danger h3-text-regular">筆跡に込められた先人たちの想い</h3>
+                        <h2 class="content-letter">良慶和上のお人柄、その書</h2>
+                    </div>
+                    <div class="col-12 col-md-3 mb-5">
+                        <div class="mb-3"><img class="w-100" src="./images/calligraphy04.jpg" alt=""></div>
+                        <h3 class="text-danger h3-text-regular">筆跡に込められた先人たちの想い</h3>
+                        <h2 class="content-letter">書と清水寺。</h2>
+                    </div>
+                    <div class="col-12 col-md-3 mb-5">
+                        <div class="mb-3"><img class="w-100" src="./images/L1005854.jpg" alt=""></div>
+                        <h3 class="text-danger h3-text-regular">積層する時間 〜本堂工事の現場から〜</h3>
+                        <h2 class="content-letter">これまでの400年、これからの400年。</h2>
+                    </div>
+                    <div class="col-12 col-md-3 mb-5">
+                        <div class="mb-3"><img class="w-100" src="./images/time-04_2.jpg" alt=""></div>
+                        <h3 class="text-danger h3-text-regular">積層する時間 〜本堂工事の現場から〜</h3>
+                        <h2 class="content-letter">過去と現在が混在する修理</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-pd">
+            <div class="container">
+                <div class="row flex-wrap border-bottom justify-content-center">
+                    <div class="col-12 mb-5">
+                        <h2
+                            class="border-top-0 border-left-0 border-right-0 border-danger text-center h2-text pb-1 border-bold border-length2">
+                            ご案内</h2>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="mb-3"><img class="w-100 d-md-none" src="./images/content_pray_sp.jpg" alt=""><img class="w-100 d-none d-md-block" src="./images/content_pray_pc.jpg" alt=""></div>
+                        <h2 class="text-center h2-text mb-3">祈り</h2>
+                        <h2 class="content-letter mb-5">清水寺の御本尊は、「十一面千手観世音菩薩」。秘仏ながらも、親しみを込めて「清水の観音さん」と呼ばれてきました。</h2>
+                        <h3 class="text-center h3-text-regular more-bottom">詳しく読む</h3>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="mb-3"><img class="w-100 d-md-none" src="./images/content_season_sp.jpg" alt=""><img
+                                class="w-100 d-none d-md-block" src="./images/content_season_pc.jpg" alt=""></div>
+                        <h2 class="text-center h2-text mb-3">四季</h2>
+                        <h2 class="content-letter mb-5">音羽山の中腹に建つ清水寺は豊かな自然に恵まれています。四季折々の伽藍の風景は、観音さまの慈悲の心そのものです。</h2>
+                        <h3 class="text-center h3-text-regular more-bottom">詳しく読む</h3>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="mb-3"><img class="w-100 d-md-none" src="./images/content_event_sp.jpg" alt=""><img
+                                class="w-100 d-none d-md-block" src="./images/content_event_pc.jpg" alt=""></div>
+                        <h2 class="text-center h2-text mb-3">行事</h2>
+                        <h2 class="content-letter mb-5">長い歴史の中で脈々と営まれてきた伝統行事と特別拝観をご案内します。年間の行事予定もこちらからご覧ください。</h2>
+                        <h3 class="text-center h3-text-regular more-bottom">詳しく読む</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container ">
+                <div class="row flex-wrap border-bottom pb-5">
+                    <div class="d-flex flex-wrap col-6 align-items-center">
+                        <img class="col-12 col-md-6 w-100 mb-3" src="./images/sitemap_guide.jpg" alt="">
+                        <p class="col-12 col-md-6 h3-text">境内案内</p>
+                    </div>
+                    <div class="d-flex flex-wrap col-6 align-items-center">
+                        <img class="col-12 col-md-6 w-100 mb-3" src="./images/sitemap_history.jpg" alt="">
+                        <p class="col-12 col-md-6 h3-text">清水寺の歴史</p>
+                    </div>
+                    <div class="d-flex flex-wrap col-6 align-items-center">
+                        <img class="col-12 col-md-6 w-100 mb-3" src="./images/sitemap_pray.jpg" alt="">
+                        <p class="col-12 col-md-6 h3-text">参拝案内</p>
+                    </div>
+                    <div class="d-flex flex-wrap col-6 align-items-center">
+                        <img class="col-12 col-md-6 w-100 mb-3" src="./images/sitemap_news.jpg" alt="">
+                        <p class="col-12 col-md-6 h3-text">便り（更新情報）</p>
+                    </div>
+                    <div class="d-flex flex-wrap col-6 align-items-center">
+                        <img class="col-12 col-md-6 w-100 mb-3" src="./images/sitemap_access.jpg" alt="">
+                        <p class="col-12 col-md-6 h3-text">交通案内</p>
+                    </div>
+                    <div class="d-flex flex-wrap col-6 align-items-center">
+                        <img class="col-12 col-md-6 w-100 mb-3" src="./images/sitemap_faq.jpg" alt="">
+                        <p class="col-12 col-md-6 h3-text">よくあるご質問</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5 pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 h-100 position-relative p-5">
+                        <img class="w-100 img-thumbnail" src="./images/sp_banner_2017event.jpeg" alt=""><p class="h2-text text-white position-absolute banner-text1">2021年 年中行事</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-grey pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 my-5">
+                        <h2 class="eng-font border-top-0 border-left-0 border-right-0 border-danger text-center h2-text-regular pb-1 border-bold border-length3">INSTAGRAM</h2>
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <div class="insta-pic1"><img class="w-100 d-block" src="./images/instagram.gif" alt=""></div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <div class="insta-pic2"><img class="w-100 d-block" src="./images/instagram.gif" alt=""></div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <div class="insta-pic3"><img class="w-100 d-block" src="./images/instagram.gif" alt=""></div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <div class="insta-pic4"><img class="w-100 d-block" src="./images/instagram.gif" alt=""></div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3 d-none d-md-block">
+                        <div class="insta-pic5"><img class="w-100 d-block" src="./images/instagram.gif" alt=""></div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3 d-none d-md-block">
+                        <div class="insta-pic6"><img class="w-100 d-block" src="./images/instagram.gif" alt=""></div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3 d-none d-md-block">
+                        <div class="insta-pic7"><img class="w-100 d-block" src="./images/instagram.gif" alt=""></div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3 d-none d-md-block">
+                        <div class="insta-pic8"><img class="w-100 d-block" src="./images/instagram.gif" alt=""></div>
+                    </div>
+                    <div class="col-12 d-flex mt-5">
+                        <h3 class=" col-6 col-md-6 h3-text-regular more-bottom2 mx-auto insta-more-text"><img class="window-icon" src="./images/i_window.svg" alt=""> もっと見る</h3>
+                        <h3 class="col-md-6 text-center h3-text-regular d-none d-md-block">風景の移り変わりや境内の佇まい。そうした音羽山の日々を写真で伝えます。「清水寺の今」をお楽しみください。</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row border-top border-bottom py-4 my-5 justify-content-center">
+                    <img class="round-icon-size" src="./images/i_f.svg" alt="">
+                    <img class="round-icon-size" src="./images/i_i.svg" alt="">
+                    <img class="youtube-icon-size" src="./images/i_y.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="bg-dark-grey">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="col-12 col-md-6 h-100 position-relative p-lg-5 mb-5">
+                        <img class="w-100 img-thumbnail" src="./images/sp_banner_feelkiyomizu.jpeg" alt="">
+                        <img class="h2-piture-md position-absolute banner-text2" src="./images/logo_feel.svg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 h-100 position-relative p-lg-5 mb-5">
+                        <img class="w-100 img-thumbnail" src="./images/sp_banner_kiyomizumonzene.jpeg" alt="">
+                        <p class="h2-text-md text-white position-absolute banner-text3">清水寺門前会</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row py-3 justified-content-between">
+                <small class="col-12 col-md-5 text-light my-1 h3-text-regular text-center text-md-left">〒605-0862 京都市東山区清水一丁目294</small>
+                <small class="col-12 col-md-3 text-light my-1 h3-text-regular text-center">TEL: 075-551-1234</small>
+                <small class="col-12 col-md-4 text-light my-1 h3-text-regular text-center text-md-right">© Kiyomizu-dera Temple</small>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
